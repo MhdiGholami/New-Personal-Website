@@ -323,8 +323,8 @@ img {
   }
 
   50% {
-    opacity: 1;
-    transform: translateX(-50%) scaleX(1.5) scaleY(1.5);
+    opacity: 10;
+    transform: translateX(-50%) scaleX(1.5) scaleY(2);
   }
 }
 
