@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مهدی غلامی | توسعه‌دهنده فرانت‌اِند</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #030712;
+            color: white;
+            overflow-x: hidden;
+        }
+        .gradient-text {
+            background: linear-gradient(to left, #a78bfa, #3b82f6);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-glow {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.2) 0%, rgba(3, 7, 18, 0) 70%);
+            border-radius: 50%;
+            z-index: -1;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .skill-icon-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .skill-icon-card:hover {
+            border-color: #8b5cf6;
+            background: rgba(139, 92, 246, 0.1);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-[#030712]">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#030712]/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-8">
+                <a href="#" class="text-2xl font-bold tracking-tighter">
+                    <span class="text-white">M</span><span class="text-violet-500">G</span>
+                </a>
+                <div class="hidden md:flex items-center gap-6 text-gray-400">
+                    <a href="#" class="hover:text-white transition-colors">خانه</a>
+                    <a href="#about" class="hover:text-white transition-colors">درباره من</a>
+                    <a href="#projects" class="hover:text-white transition-colors">پروژه‌ها</a>
+                    <a href="#skills" class="hover:text-white transition-colors">مهارت‌ها</a>
+                    <a href="#contact" class="hover:text-white transition-colors">تماس</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <button class="w-10 h-10 flex items-center justify-center rounded-full border border-white/10 text-gray-400 hover:text-white">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Left: Portrait -->
+            <div class="relative order-2 lg:order-1">
+                <div class="hero-glow -top-20 -right-20"></div>
+                <div class="hero-glow -bottom-20 -left-20"></div>
+                <img src="http://localhost:5173/local-assets/asset_138d8927dd4e966a2734c65a.png" alt="مهدی غلامی" class="relative z-10 w-full max-w-md mx-auto grayscale hover:grayscale-0 transition-all duration-700">
+            </div>
+
+            <!-- Right: Content -->
+            <div class="order-1 lg:order-2 flex flex-col items-center lg:items-start text-center lg:text-right">
+                <h2 class="text-2xl mb-4 font-medium">سلام، من</h2>
+                <h1 class="text-7xl font-black mb-6 flex flex-col gap-2">
+                    <span class="text-white">مهدی</span>
+                    <span class="gradient-text">غلامی</span>
+                </h1>
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="h-0.5 w-12 bg-orange-500"></div>
+                    <span class="text-xl font-medium text-gray-200">توسعه‌دهنده فرانت‌اِند</span>
+                </div>
+                <p class="text-gray-400 text-lg leading-relaxed max-w-lg mb-10">
+                    من تجربه‌های وب مدرن و مقیاس‌پذیر می‌سازم با تمرکز بر کد تمیز و تجربه کاربری فوق‌العاده.
+                </p>
+                
+                <div class="flex flex-wrap gap-4 mb-12">
+                    <a href="#projects" class="bg-violet-600 hover:bg-violet-700 text-white px-8 py-3 rounded-xl font-medium flex items-center gap-2 transition-all">
+                        مشاهده پروژه‌ها
+                        <i class="fas fa-plus text-sm"></i>
+                    </a>
+                    <a href="#" class="border border-white/10 hover:bg-white/5 text-white px-8 py-3 rounded-xl font-medium flex items-center gap-2 transition-all">
+                        دانلود رزومه
+                        <i class="fas fa-download text-sm"></i>
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-6 text-2xl text-gray-400">
+                    <a href="#" class="hover:text-white transition-colors"><i class="fab fa-github"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-left mb-4">
+                <span class="text-gray-500 uppercase tracking-widest text-sm">درباره من</span>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Left: Code Snippet -->
+                <div class="glass-card rounded-3xl p-8 font-mono text-sm overflow-hidden relative">
+                    <div class="flex gap-2 mb-8">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <div class="flex gap-6 mb-4 text-gray-500">
+                        <span class="text-white border-b border-violet-500 pb-1">AboutMe.jsx</span>
+                        <span>Skills.jsx</span>
+                        <span>Contact.jsx</span>
+                    </div>
+                    <div class="space-y-1">
+                        <div><span class="text-gray-500">1</span> <span class="text-violet-400">const</span> <span class="text-blue-400">Mahdi</span> = {</div>
+                        <div><span class="text-gray-500">2</span> &nbsp; name: <span class="text-orange-300">'Mahdi Gholami'</span>,</div>
+                        <div><span class="text-gray-500">3</span> &nbsp; role: <span class="text-orange-300">'Frontend Developer'</span>,</div>
+                        <div><span class="text-gray-500">4</span> &nbsp; experience: <span class="text-orange-300">'3+ Years'</span>,</div>
+                        <div><span class="text-gray-500">5</span> &nbsp; focus: [ <span class="text-orange-300">'React'</span>, <span class="text-orange-300">'Next.js'</span>, <span class="text-orange-300">'TypeScript'</span>,</div>
+                        <div><span class="text-gray-500">6</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="text-orange-300">'UI/UX'</span>, <span class="text-orange-300">'Performance'</span> ],</div>
+                        <div><span class="text-gray-500">7</span> &nbsp; passion: <span class="text-orange-300">'Building great products'</span>,</div>
+                        <div><span class="text-gray-500">8</span> };</div>
+                        <div><span class="text-gray-500">9</span> </div>
+                        <div><span class="text-gray-500">10</span> <span class="text-violet-400">export default</span> Mahdi;</div>
+                    </div>
+                </div>
+
+                <!-- Right: Content -->
+                <div class="flex flex-col items-start text-right">
+                    <h2 class="text-4xl font-bold mb-8 leading-tight">
+                        من محصولات دیجیتال <span class="text-violet-500">کاربرپسند</span> می‌سازم.
+                    </h2>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-12">
+                        من یک توسعه‌دهنده فرانت‌اِند با بیش از ۳ سال تجربه هستم. عاشق ساخت رابط‌های زیبا، کاربردی و مقیاس‌پذیر هستم و ایده‌ها را به محصولاتی واقعی تبدیل می‌کنم.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 w-full">
+                        <div class="text-center md:text-right">
+                            <div class="text-4xl font-bold mb-1">۳+</div>
+                            <div class="text-gray-500 text-sm">سال تجربه</div>
+                        </div>
+                        <div class="text-center md:text-right">
+                            <div class="text-4xl font-bold mb-1">۵۳</div>
+                            <div class="text-gray-500 text-sm">پروژه موفق</div>
+                        </div>
+                        <div class="text-center md:text-right">
+                            <div class="text-4xl font-bold mb-1">۲۵+</div>
+                            <div class="text-gray-500 text-sm">مشتری راضی</div>
+                        </div>
+                        <div class="text-center md:text-right">
+                            <div class="text-4xl font-bold mb-1">۱۰۰٪</div>
+                            <div class="text-gray-500 text-sm">تعهد</div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="border border-white/10 hover:bg-white/5 px-8 py-3 rounded-xl flex items-center gap-2 transition-all">
+                        <span>بیشتر درباره من</span>
+                        <i class="fas fa-arrow-left text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6 bg-white/1">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between mb-12">
+                <div class="text-right">
+                    <span class="text-gray-500 uppercase tracking-widest text-sm block mb-2">پروژه‌های منتخب</span>
+                    <h2 class="text-3xl font-bold">برخی از کارهایی که ساخته‌ام</h2>
+                </div>
+                <a href="#" class="text-gray-400 hover:text-white flex items-center gap-2 transition-all group">
+                    <span>مشاهده همه پروژه‌ها</span>
+                    <i class="fas fa-arrow-left group-hover:-translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="glass-card rounded-3xl overflow-hidden group">
+                    <div class="p-4">
+                        <img src="http://localhost:5173/local-assets/asset_2bf3f1f6261c71c3f7314f7f.png" alt="Nexora" class="w-full h-48 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold">Nexora.</h3>
+                            <a href="#" class="text-gray-400 hover:text-white"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                            صفحه فرود مدرن برای آژانس دیجیتال.
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-lg text-xs text-gray-300">Next.js</span>
+                            <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-lg text-xs text-gray-300">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card rounded-3xl overflow-hidden group">
+                    <div class="p-4">
+                        <img src="http://localhost:5173/local-assets/asset_fa801884b542a4ac15b72434.png" alt="TaskFlow" class="w-full h-48 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold">TaskFlow.</h3>
+                            <a href="#" class="text-gray-400 hover:text-white"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                            اپلیکیشن مدیریت وظایف و کارها.
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-lg text-xs text-gray-300">React</span>
+                            <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-lg text-xs text-gray-300">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-card rounded-3xl overflow-hidden group">
+                    <div class="p-4">
+                        <img src="http://localhost:5173/local-assets/asset_b60f167a9543004ccd962052.png" alt="MovieHub" class="w-full h-48 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold">MovieHub.</h3>
+                            <a href="#" class="text-gray-400 hover:text-white"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                            اکتشاف فیلم‌ها و سریال‌ها به راحتی.
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-lg text-xs text-gray-300">Next.js</span>
+                            <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-lg text-xs text-gray-300">TMDB API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <span class="text-gray-500 uppercase tracking-widest text-sm block mb-4">مهارت‌های من</span>
+            <h2 class="text-4xl font-bold mb-16">تکنولوژی‌هایی که با آن‌ها کار می‌کنم</h2>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-6 mb-16">
+                <!-- React -->
+                <div class="skill-icon-card rounded-2xl p-6 flex flex-col items-center gap-4">
+                    <i class="fab fa-react text-4xl text-cyan-400"></i>
+                    <span class="font-medium text-sm">React</span>
+                </div>
+                <!-- Next.js -->
+                <div class="skill-icon-card rounded-2xl p-6 flex flex-col items-center gap-4">
+                    <i class="fas fa-terminal text-4xl text-white"></i>
+                    <span class="font-medium text-sm">Next.js</span>
+                </div>
+                <!-- TypeScript -->
+                <div class="skill-icon-card rounded-2xl p-6 flex flex-col items-center gap-4">
+                    <i class="fas fa-code text-4xl text-blue-500"></i>
+                    <span class="font-medium text-sm">TypeScript</span>
+                </div>
+                <!-- JavaScript -->
+                <div class="skill-icon-card rounded-2xl p-6 flex flex-col items-center gap-4">
+                    <i class="fab fa-js text-4xl text-yellow-400"></i>
+                    <span class="font-medium text-sm">JavaScript</span>
+                </div>
+                <!-- Tailwind -->
+                <div class="skill-icon-card rounded-2xl p-6 flex flex-col items-center gap-4">
+                    <i class="fab fa-css3-alt text-4xl text-cyan-500"></i>
+                    <span class="font-medium text-sm">Tailwind CSS</span>
+                </div>
+                <!-- Sass -->
+                <div class="skill-icon-card rounded-2xl p-6 flex flex-col items-center gap-4">
+                    <i class="fab fa-sass text-4xl text-pink-400"></i>
+                    <span class="font-medium text-sm">Sass</span>
+                </div>
+                <!-- Git -->
+                <div class="skill-icon-card rounded-2xl p-6 flex flex-col items-center gap-4">
+                    <i class="fab fa-github text-4xl text-white"></i>
+                    <span class="font-medium text-sm">Git & GitHub</span>
+                </div>
+            </div>
+
+            <a href="#" class="border border-white/10 hover:bg-white/5 px-8 py-3 rounded-xl inline-flex items-center gap-2 transition-all">
+                <i class="fas fa-plus text-xs"></i>
+                <span>مشاهده همه مهارت‌ها</span>
+                <i class="fas fa-arrow-left text-sm"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 px-6">
+        <div class="max-w-5xl mx-auto glass-card rounded-[3rem] p-16 relative overflow-hidden text-center">
+            <div class="hero-glow -top-40 -left-40"></div>
+            <div class="hero-glow -bottom-40 -right-40"></div>
+            
+            <span class="text-gray-400 block mb-6">بیایید با هم کار کنیم</span>
+            <h2 class="text-5xl font-bold mb-8">پروژه‌ای در ذهن دارید؟</h2>
+            <p class="text-gray-400 text-lg mb-12 max-w-2xl mx-auto">
+                من برای پروژه‌های فریلنسری و فرصت‌های شغلی تمام‌وقت در دسترس هستم.
+            </p>
+            <a href="#contact" class="bg-violet-600 hover:bg-violet-700 text-white px-10 py-4 rounded-2xl font-bold text-lg inline-flex items-center gap-3 transition-all">
+                <span>تماس با من</span>
+                <i class="fas fa-arrow-left"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="pt-24 pb-12 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+                <!-- Branding -->
+                <div>
+                    <a href="#" class="text-3xl font-bold tracking-tighter block mb-6">
+                        <span class="text-white">M</span><span class="text-violet-500">G</span>
+                    </a>
+                    <p class="text-gray-400 leading-relaxed">
+                        تجربه‌های دیجیتال می‌سازم با اشتیاق و دقت.
+                    </p>
+                </div>
+                <!-- Links -->
+                <div>
+                    <h4 class="font-bold mb-6">دسترسی سریع</h4>
+                    <ul class="space-y-4 text-gray-500">
+                        <li><a href="#" class="hover:text-white transition-colors">خانه</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">درباره من</a></li>
+                        <li><a href="#projects" class="hover:text-white transition-colors">پروژه‌ها</a></li>
+                        <li><a href="#skills" class="hover:text-white transition-colors">مهارت‌ها</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">تماس</a></li>
+                    </ul>
+                </div>
+                <!-- Socials -->
+                <div>
+                    <h4 class="font-bold mb-6">شبکه‌های اجتماعی</h4>
+                    <ul class="space-y-4 text-gray-500">
+                        <li><a href="#" class="hover:text-white transition-colors">GitHub</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Twitter</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Instagram</a></li>
+                    </ul>
+                </div>
+                <!-- Info -->
+                <div>
+                    <h4 class="font-bold mb-6">اطلاعات تماس</h4>
+                    <ul class="space-y-4 text-gray-500">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-violet-500"></i>
+                            <span>hello@mahdigholami.dev</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-map-marker-alt text-violet-500"></i>
+                            <span>تهران، ایران</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                            <span>موجود برای همکاری</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center justify-between pt-12 border-t border-white/5 text-gray-500 text-sm">
+                <p>© 2024 Mahdi. تمامی حقوق محفوظ است.</p>
+                <button class="w-10 h-10 border border-white/10 rounded-xl flex items-center justify-center hover:bg-white/5 transition-colors mt-6 md:mt-0">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
