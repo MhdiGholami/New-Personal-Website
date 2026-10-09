@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap'); */
 
 @import "tailwindcss";
 
@@ -74,6 +74,20 @@
   --border-gradiant: #7c86ff;
 }
 
+/* ================================
+  ALL @font-faces
+================================ */
+
+@font-face {
+  font-family: peydaFaNumpeydaFaNum;
+  src: url(../assets/fonts/peydaFaNumpeydaFaNum-Thin-normal.truetype);
+}
+
+@font-face {
+  font-family: interinter;
+  src: url(../assets/fonts/interinter-Thin-normal.truetype);
+}
+
 
 /* ================================
   ALL @MEDIA
@@ -110,7 +124,9 @@ body {
   background: var(--background);
   color: var(--foreground);
 
-  font-family: var(--font-sans);
+  /* font-family: var(--font-sans); */
+
+  font-family: 'peydaFaNumpeydaFaNum';
 
   transition:
     background-color 0.3s ease,
